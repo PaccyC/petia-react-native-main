@@ -13,7 +13,8 @@ module.exports = {
         tertiary:"#F59245",
         light:"#FAC8A2",
         "dark-1":"#1F2029",
-        "gray-1":"#C2C3CC"
+        "gray-1":"#C2C3CC",
+        "light-orange":"#FCDBC1"
        }
     },
   },

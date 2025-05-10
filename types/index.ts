@@ -11,7 +11,17 @@ export interface CustomButtonProps extends ButtonProps{
 
 export interface CustomInputProps  extends TextInputProps{
     onChangeText: (text:string)=> void;
-    labelText:string;
+    labelText?:string;
+    labelStyle?:any;
+    placeholder?:string;
+    containerStyle?:any;
+    iconRight?:any
+
+}
+
+export interface SearchInputProps  extends TextInputProps{
+    onChangeText: (text:string)=> void;
+    labelText?:string;
     labelStyle?:any;
     placeholder?:string;
     containerStyle?:any;

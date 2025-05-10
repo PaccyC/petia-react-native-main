@@ -1,5 +1,6 @@
 import CustomButton from '@/components/CustomButton'
 import CustomInput from '@/components/CustomInput'
+import { EyeClose, EyeOpen } from '@/components/svgs'
 import { Link, router } from 'expo-router'
 import { useState } from 'react'
 import { View, Text, ScrollView, Image } from 'react-native'
@@ -45,7 +46,7 @@ const Register = () => {
             labelText='Password' 
             value={formData.password}
             onChangeText={(text)=>setFormData({...formData,password:text})}
-            iconRight={{close:"",open:""}}
+            iconRight={{close:<EyeClose/>,open:<EyeOpen/>}}
             />
             {/* <Text className='text-center font-normal text-[14px]'>
               Forgot Password? 
@@ -55,7 +56,7 @@ const Register = () => {
             labelText='Confirm Password' 
             value={formData.password}
             onChangeText={(text)=>setFormData({...formData,confirmPassword:text})}
-            iconRight={{close:"",open:""}}
+            iconRight={{close:<EyeClose/>,open:<EyeOpen/>}}
             />
 
 

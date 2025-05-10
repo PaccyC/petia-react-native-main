@@ -1,12 +1,11 @@
 import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const Star = (props) => (
+import Svg, { Path, SvgProps } from "react-native-svg";
+const Star = (props:SvgProps) => (
   <Svg
     width={64}
     height={61}
     viewBox="0 0 64 61"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <Path

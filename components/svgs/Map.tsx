@@ -1,12 +1,11 @@
 import * as React from "react";
-import Svg, { G, Path, Defs, ClipPath, Rect } from "react-native-svg";
-const Map = (props) => (
+import Svg, { G, Path, Defs, ClipPath, Rect, SvgProps } from "react-native-svg";
+const Map = (props:SvgProps) => (
   <Svg
     width={59}
     height={59}
     viewBox="0 0 59 59"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <G clipPath="url(#clip0_1116_528)">

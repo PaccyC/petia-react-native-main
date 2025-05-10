@@ -1,12 +1,11 @@
 import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const Calendar = (props) => (
+import Svg, { Path, SvgProps } from "react-native-svg";
+const Calendar = (props:SvgProps) => (
   <Svg
     width={66}
     height={67}
     viewBox="0 0 66 67"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <Path

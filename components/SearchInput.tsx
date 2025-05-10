@@ -1,8 +1,9 @@
 import { View, Text, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, Keyboard, TextInput, Image, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
-import { CustomInputProps } from '@/types'
+import { CustomInputProps, SearchInputProps } from '@/types'
+import { Search } from './svgs'
 
-const CustomInput = ({
+const SearchInput = ({
 
   onChangeText,
   labelText,
@@ -12,7 +13,7 @@ const CustomInput = ({
   secureTextEntry = false,
   value,
   iconRight
-}:CustomInputProps) => {
+}:SearchInputProps) => {
   const [isPasswordVisible,setIsPasswordVisible]= useState(!secureTextEntry)
 
   const togglePasswordVisibility =()=>{
@@ -37,14 +38,13 @@ const CustomInput = ({
           numberOfLines={1}
           placeholder={placeholder}
           />
-          {iconRight && 
-          <TouchableOpacity
-          onPress={togglePasswordVisibility}
-          className='absolute right-2 flex h-full justify-center'
-          >
-            {isPasswordVisible ?  iconRight.close:  iconRight.open}
         
-          </TouchableOpacity>}
+          <TouchableOpacity
+          className='absolute right-2 flex h-full justify-center z-50'
+          >
+           <Search/>
+        
+          </TouchableOpacity>
           </View>
         </View>
 
@@ -54,4 +54,4 @@ const CustomInput = ({
   )
 }
 
-export default CustomInput
+export default SearchInput

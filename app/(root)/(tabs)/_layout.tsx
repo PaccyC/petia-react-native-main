@@ -13,7 +13,8 @@ const TabsLayout = () => {
       <Stack.Screen name="profile" />
       <Stack.Screen name="service" />
       <Stack.Screen name="shop" />
-      <Stack.Screen name="notifications" />
+      <Stack.Screen name="notifications"/>
+      <Stack.Screen name="veterinary"/>
     </Stack>
   );
 };

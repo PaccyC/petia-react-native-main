@@ -12,3 +12,7 @@
 .login-background{
     background-image: linear-gradient(to bottom,white 0%,rgb(250 200 162 / 0.1) 30%,rgb(250 200 162 / 0.1) 80% );
 }
+
+.card-horizontal-gradient{
+    background-image: linear-gradient(to right,#F67A1F 0%, #91CB4B 60%,#91CB4B 90%);
+}

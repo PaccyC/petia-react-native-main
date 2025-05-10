@@ -14,11 +14,7 @@ const SearchInput = ({
   value,
   iconRight
 }:SearchInputProps) => {
-  const [isPasswordVisible,setIsPasswordVisible]= useState(!secureTextEntry)
-
-  const togglePasswordVisibility =()=>{
-    setIsPasswordVisible((prev)=>!prev);
-  }
+ 
   return (
     <KeyboardAvoidingView
     behavior={Platform.OS === "ios" ? "padding": "height"}

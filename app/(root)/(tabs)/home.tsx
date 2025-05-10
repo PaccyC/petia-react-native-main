@@ -110,7 +110,7 @@ const Home = () => {
                 <CustomButton
                   containerStyle="bg-tertiary w-[100px] mt-2"
                   title="See More"
-                  onPress={() => {}}
+                  onPress={() => router.push("/(root)/(tabs)/veterinary")}
                 />
               </View>
 

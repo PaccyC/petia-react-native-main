@@ -28,3 +28,11 @@ export interface SearchInputProps  extends TextInputProps{
     iconRight?:any
 
 }
+
+export interface DoctorCardProps {
+    image:any;
+    name:string;
+    department:any,
+    rating:number;
+    distanceFromYou:number
+}

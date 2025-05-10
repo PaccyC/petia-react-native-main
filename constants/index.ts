@@ -3,6 +3,14 @@ import Category2Image from "@/assets/images/category-2.png"
 import Category3Image from "@/assets/images/category-3.png"
 import Category4Image from "@/assets/images/category-4.png"
 
+import Service1Image from "@/assets/images/vaccination.png"
+import Service2Image from "@/assets/images/vaccination.png"
+import Service3Image from "@/assets/images/behavioral.png"
+import Service4Image from "@/assets/images/dentistry.png"
+
+
+import Doctor1Image from "@/assets/images/doctor-1.png"
+import Doctor2Image from "@/assets/images/doctor2.png"
 
 const categories= [
     {
@@ -27,6 +35,31 @@ const categories= [
     }
 ]
 
+
+
+
+const services= [
+    {
+        id:1,
+        title:"Vaccinations",
+        image:Service1Image
+    },
+    {
+        id:2,
+        title:"Operations",
+        image:Service2Image
+    },
+    {
+        id:3,
+        title:"Behaviorals",
+        image:Service3Image
+    },
+    {
+        id:4,
+        title:"Dentistry",
+        image:Service4Image
+    }
+]
 
 const notifications=[
     {
@@ -106,13 +139,41 @@ const notifications=[
             }
         ]
     }
-
-            
-          
-         
       
 ]
+
+const doctors=[
+    {
+        id:1,
+        name:"Dr. Anna Johanson",
+        department:"Veterinary Behavioral",
+        rating:4.8,
+        distanceFromYou: 1,
+        image:Doctor1Image
+    },
+    {
+        id:2,
+        name:"Dr. Vernon Chwe",
+        department:"Veterinary Surgery",
+        rating:4.9,
+        distanceFromYou: 1.5,
+        image:Doctor2Image
+    },
+    {
+        id:3,
+        name:"Dr. Anna Johanson",
+        department:"Dentistry",
+        rating:4.8,
+        distanceFromYou: 1,
+        image:Doctor1Image
+    },
+]
+
+
+
 export const data={
     categories,
-    notifications
+    notifications,
+    services,
+    doctors
 }

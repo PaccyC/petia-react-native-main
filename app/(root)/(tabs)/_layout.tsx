@@ -1,21 +1,60 @@
-import { Stack } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 import React from "react";
+import Feather from '@expo/vector-icons/Feather';
+import AntDesign from '@expo/vector-icons/AntDesign';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 const TabsLayout = () => {
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-      }}
+    <Tabs
+
+    screenOptions={{
+      headerShown:false,
+      tabBarActiveTintColor: "#F67A1F",
+    
+    }}
     >
-      <Stack.Screen name="home" />
-      <Stack.Screen name="history" />
-      <Stack.Screen name="profile" />
-      <Stack.Screen name="service" />
-      <Stack.Screen name="shop" />
-      <Stack.Screen name="notifications"/>
-      <Stack.Screen name="veterinary"/>
-    </Stack>
+      <Tabs.Screen
+      name="home"
+      options={{
+        title:"Home",
+        tabBarIcon: ({color,size})=> <Feather name="home" size={size} color={color} />
+      }}
+      />
+      <Tabs.Screen
+      name="shop"
+      options={{
+        title:"Cart",
+        tabBarIcon: ({color,size})=> <Feather name="shopping-cart" size={size} color={color} />
+      }}
+      />
+       <Tabs.Screen
+      name="service"
+      options={{
+        title:"Service",
+        tabBarIcon: ({color,size})=> <AntDesign name="hearto" size={size} color={color} />
+
+      }}
+      />
+       <Tabs.Screen
+      name="history"
+      options={{
+        title:"History",
+        tabBarIcon: ({color,size})=> <Feather name="clock" size={size} color={color} />
+
+      }}
+      />
+
+<Tabs.Screen
+      name="profile"
+      options={{
+        title:"Profile",
+        tabBarIcon: ({color,size})=><MaterialCommunityIcons name="account" size={size} color={color} />
+
+      }}
+      />
+
+    </Tabs>
   );
 };
 

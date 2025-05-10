@@ -8,6 +8,8 @@ const TabsLayout = () => {
         headerShown: false
     }}>
         <Stack.Screen name='(tabs)'/>
+        <Stack.Screen name='(features)'/>
+        
         
     </Stack>
   )

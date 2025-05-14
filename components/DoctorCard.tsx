@@ -8,7 +8,8 @@ image,
 name,
 department,
 rating,
-distanceFromYou
+distanceFromYou,
+onPress
 }:DoctorCardProps) => {
   return (
     <View className='w-full bg-white rounded-lg shadow-md px-3 py-3'>

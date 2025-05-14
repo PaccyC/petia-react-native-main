@@ -32,7 +32,8 @@ export interface SearchInputProps  extends TextInputProps{
 export interface DoctorCardProps {
     image:any;
     name:string;
-    department:any,
+    department:any;
     rating:number;
-    distanceFromYou:number
+    distanceFromYou:number;
+    onPress?: () => void;
 }

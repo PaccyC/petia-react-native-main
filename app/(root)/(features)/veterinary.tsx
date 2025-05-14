@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { MapPin } from "@/components/svgs";
 import SearchInput from "@/components/SearchInput";
 import { useDebounce } from "@/hooks/useDebounce";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { data } from "@/constants";
 import DoctorCard from "@/components/DoctorCard";
 import { LinearGradient } from 'expo-linear-gradient';
@@ -109,6 +109,7 @@ const Veterinary = () => {
             image={doctor.image}
             name={doctor.name}
             rating={doctor.rating}
+            onPress={()=>router.push("/(root)/(tabs)/profile")}
             />
           ))}
 

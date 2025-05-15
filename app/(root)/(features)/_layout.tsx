@@ -11,6 +11,8 @@ const FeaturesLayout = () => {
     >
       <Stack.Screen name="notifications"/>
       <Stack.Screen name="veterinary"/>
+      <Stack.Screen name="grooming"/>
+      <Stack.Screen name="training"/>
     </Stack>
   )
 }

@@ -22,7 +22,7 @@ const SearchInput = ({
       <TouchableWithoutFeedback 
       onPress={()=>Keyboard.dismiss()} 
       className=''>
-        <View className={`w-full flex flex-col gap-1z items-start ${containerStyle}`}>
+        <View className={`w-full flex flex-col gap-1 items-start ${containerStyle}`}>
           <Text className={`text-black/80 text-[16px] font-normal capitalize ${labelStyle}`}>{labelText}</Text>
           <View className='w-full relative'>
           <TextInput 

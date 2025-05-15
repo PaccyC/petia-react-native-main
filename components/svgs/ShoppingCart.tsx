@@ -2,8 +2,8 @@ import * as React from "react";
 import Svg, { G, Path, Defs, ClipPath, Rect, SvgProps } from "react-native-svg";
 const ShoppingCart = (props:SvgProps) => (
   <Svg
-    width={100}
-    height={100}
+    width={20}
+    height={20}
     viewBox="0 0 100 100"
     fill="none"
     {...props}

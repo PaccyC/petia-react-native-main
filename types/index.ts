@@ -4,7 +4,8 @@ export interface CustomButtonProps extends ButtonProps{
     onPress: ()=> void;
     containerStyle?: any;
     textStyle?: any;
-    title:string
+    title:string;
+    icon?:any
 
 }
 

@@ -1,4 +1,4 @@
-import { Stack, Tabs } from "expo-router";
+import { router, Stack, Tabs } from "expo-router";
 import React from "react";
 import Feather from '@expo/vector-icons/Feather';
 import AntDesign from '@expo/vector-icons/AntDesign';
@@ -49,6 +49,7 @@ const TabsLayout = () => {
         tabBarButton:()=>(
         <TouchableOpacity
          style={styles.cartButton}
+         onPress={()=>router.push("/(root)/(tabs)/shop")}
         >
             <Feather name="shopping-cart" size={24} color="#fff" />
             <Text style={styles.cartText}>Cart</Text>
@@ -70,9 +71,13 @@ const TabsLayout = () => {
       name="profile"
       options={{
         title:"Profile",
-        tabBarIcon: ({color,size})=><MaterialCommunityIcons name="account" size={size} color={color} />
+        tabBarIcon: ({color,size})=><MaterialCommunityIcons name="account" size={size} color={color} />,
+        tabBarStyle:{
+          display:'none'
+        }
 
       }}
+    
       />
 
     </Tabs>

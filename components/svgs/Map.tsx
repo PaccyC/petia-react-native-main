@@ -2,8 +2,8 @@ import * as React from "react";
 import Svg, { G, Path, Defs, ClipPath, Rect, SvgProps } from "react-native-svg";
 const Map = (props:SvgProps) => (
   <Svg
-    width={59}
-    height={59}
+    width={20}
+    height={20}
     viewBox="0 0 59 59"
     fill="none"
     {...props}

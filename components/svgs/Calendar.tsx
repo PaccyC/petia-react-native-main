@@ -2,8 +2,8 @@ import * as React from "react";
 import Svg, { Path, SvgProps } from "react-native-svg";
 const Calendar = (props:SvgProps) => (
   <Svg
-    width={66}
-    height={67}
+    width={20}
+    height={20}
     viewBox="0 0 66 67"
     fill="none"
     {...props}

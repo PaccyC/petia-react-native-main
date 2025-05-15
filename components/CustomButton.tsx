@@ -5,14 +5,20 @@ import { CustomButtonProps } from '@/types'
 const CustomButton = ({onPress,
     containerStyle,
     textStyle="text-white",
-    title}:CustomButtonProps) => {
+    title,icon}:CustomButtonProps) => {
   return (
     <TouchableOpacity 
-    className={`flex items-center justify-center text-center py-3 ${containerStyle} rounded-lg`}
+    className={`flex flow-row items-center justify-center text-center py-3 ${containerStyle} rounded-lg`}
     onPress={onPress}
     
     >
-        <Text className={`text-lg font-medium leading-7  ${textStyle}`}>{title}</Text>
+      <View className='w-full flex flex-row items-center justify-center'>
+       { icon && <>{icon}<Text>{" "}</Text></>}
+       
+        <Text className={`text-lg font-medium leading-7 flex text-[#529501] ${textStyle}`}>{title}</Text>
+
+      </View>
+
 
 
     </TouchableOpacity>
